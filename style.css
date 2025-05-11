@@ -48,6 +48,10 @@ body{
     gap: 10px;
     align-items: center;
 }
+
+.navbar__s4{
+    display: none;;
+}
 /* My Leaning pop-up */
 
 .mylearning{
@@ -143,7 +147,9 @@ justify-content: space-between;
 margin-top: 10px;
 }
 .course_card{
-    width: 200px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
 }
 
 .course_card img{
@@ -204,3 +210,28 @@ margin-top: 10px;
     display: flex;
     justify-content: space-between;
  }
+
+ @media screen and (max-width: 800px) {
+  body{
+    font-size: 10px;;
+  }
+    
+ }
+
+ @media screen and (max-width: 600px) {
+   .course_card{
+    flex-basis: 40%;
+   }
+.catagories{
+    display: none;
+}
+
+.navbar__s2,.navbar__s3{
+    display: none;
+}
+
+.navbar__s4{
+    display: block;
+}
+      
+}
